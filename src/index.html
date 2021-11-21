@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Milligram Admin Template</title>
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <link rel='stylesheet' href='../dist/css/all.min.css'>
+  <link rel="stylesheet" href="../dist/css/datatables.min.css">
+  <script src='../dist/js/jquery.min.js'></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="page-container" class="sidebar-open">
+  
+  <div id="page-overlay"></div>
+  
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <div class="float-left">
+        <a href="#" id="close-sidebar" class="btn"><i class="fas fa-fw fa-times"></i></a>
+      </div>
+      <span class="sidebar-header-title">Admin Template</span>
+    </div>
+    <section class="row">
+      <ul class="column sidebar-nav">
+        
+        <li class="nav-section-heading">
+          Features
+        </li>
+        <li class="sub-menu">
+          <a href="#" class="hover-light-blue">
+            <i class="fas fa-bookmark"></i>
+            <span>Bookmarks</span>
+            <span href="#" class="sub-menu-toggle"><i class="fas fa-chevron-down"></i></span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">Social media</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Entertainment</a>
+            </li>
+            <li>
+              <a href="#">Reference sites</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="hover-deep-orange">
+            <i class="fas fa-bug"></i>
+            <span>Bugs</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-amber">
+            <i class="fas fa-tools"></i>
+            <span>Build</span>
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+  </nav>
+  
+  <div id="actionbar">
+    <div class="actionbar-header">
+      <a href="#" id="close-actionbar" class="btn"><i class="fas fa-fw fa-times"></i></a>
+    </div>
+      <ul class="column actionbar-nav">
+
+        <li>
+          <div class="user-info">
+            <i class="fas fa-user-circle" style="font-size:64px;"></i>
+            <h4>Alexander Hall</h4>
+            <span>Web Developer</span>
+          </div>
+        </li>
+
+        <li>
+          <a href="#" class="hover-blue">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-green">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover-red">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log Out</span>
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+  
+  </div>
+
+  <div id="page-content" class="container-fluid">
+
+    <header id="page-header">
+      <div class="row">
+        <div class="column">
+          <section class="actions float-left">
+            <a href="#" id="toggle-sidebar" class="btn hide-lg"><i class="fas fa-fw fa-bars"></i></a>
+          </section>
+          <section class="actions float-right">
+            <a href="#" id="toggle-actionbar" class="">Alexander Hall  <i class="fas fa-fw fa-ellipsis-v"></i></a>
+          </section>
+        </div>
+      </div>
+    </header>
+    
+    <div id="page-body">
+      <header class="row">
+        <h3><i class="fa fa-tachometer-alt"></i> Dashboard</h3>
+      </header>
+
+      <div class="row">
+        <div class="column">
+          <div class="card bg-purple">
+            <div class="card__title">
+              <i class="fas fa-users"></i> Users
+            </div>
+            <div class="card__big">
+              2,000
+            </div>
+            <div class="card__footer">
+              <span class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 4%</span> from last week
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card bg-purple">
+            <div class="card__title">
+              <i class="fas fa-book"></i> Page Views
+            </div>
+            <div class="card__big">
+              424,892
+            </div>
+            <div class="card__footer">
+              <span class="red"><i class="fa fa-caret-down" aria-hidden="true"></i> 4%</span> from last week
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card bg-purple">
+            <div class="card__title">
+              <i class="fa fa-clock"></i> Avg. Session Duration
+            </div>
+            <div class="card__big">
+              00:03:20
+            </div>
+            <div class="card__footer">
+              <span class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 4%</span> from last week
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card bg-purple">
+            <div class="card__title">
+              <i class="fas fa-reply"></i> Bounce Rate
+            </div>
+            <div class="card__big">
+              71.46%
+            </div>
+            <div class="card__footer">
+              <span class="green"><i class="fa fa-caret-up" aria-hidden="true"></i> 4%</span> from last week
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column inline">
+          <input type="text" placeholder="Search for an employee">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <select name="" id="">
+            <option value="">One</option>
+          </select>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column column-50 column-offset-25 responsive"><span class="column-demo">.column column-50 column-offset-25</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column responsive"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column responsive"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column responsive"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+
+      <div class="row">
+        <h4>Datatables</h4>
+          <table id="example" class="table" style="min-width:100%">
+            <thead>
+            <tr class="bg-purple">
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+            </tr>
+            <tr>
+              <td>Tiger</td>
+              <td>Nixon</td>
+              <td>61</td>
+            </tr>
+            <tr>
+              <td>Garrett</td>
+              <td>Winters</td>
+              <td>63</td>
+            </tr>
+            <tr>
+              <td>Angelica</td>
+              <td>Ramos</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>Caesar</td>
+              <td>Vance</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td>Cara</td>
+              <td>Stevens</td>
+              <td>46</td>
+            </tr>
+            <tr>
+              <td>Cedric</td>
+              <td>Kelly</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>Olivia</td>
+              <td>Liang</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Paul</td>
+              <td>Byrd</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>Prescott</td>
+              <td>Bartlett</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Yuri</td>
+              <td>Berry</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>Zorita</td>
+              <td>Serrano</td>
+              <td>56</td>
+            </tr>
+            <tr>
+              <td>Zenaida</td>
+              <td>Frank</td>
+              <td>63</td>
+            </tr>
+            </tbody>
+          </table>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="float-left">
+      Copyright &copy;2021 by BARC
+    </div>
+    <div class="float-right">
+      Anything here
+    </div>
+  </footer>
+
+</div>
+<!-- partial -->
+<script src="../dist/js/script.js"></script>
+<script src="../dist/js/datatables.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#example').DataTable();
+  } );
+</script>
+</body>
+</html>
